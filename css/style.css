@@ -1,3 +1,14 @@
+@font-face
+{
+	font-family: "Archivo-Italic";
+		src : url("../fonts/Archivo-Italic.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: "Archivo-Medium";
+    src : url("../fonts/Archivo-Medium.ttf") format("truetype");
+}
 
 body {
     margin: 0;
@@ -11,7 +22,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    outline: none;
 }
 
 a:hover {
@@ -67,10 +78,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 
 .bg-repeat {
@@ -272,6 +283,23 @@ a:hover {
 .voffset-lg {
     margin-top: 80px;
 }
+blockquote {
+    border:none;
+}
+
+.quote{
+    font-family: Archivo-Italic;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    /* font-style: oblique; */
+    margin-bottom: 0;
+    color:#737373;
+}
+cite{
+    font-size: 19px;
+    font-style: normal;
+}
 
 .row-no-gutters {
     margin-right: 0;
@@ -284,7 +312,7 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
+#acc-h1{
     font-size: 32px;
 }
 
@@ -294,7 +322,7 @@ a:hover {
 }
 
 .navbar-brand {
-    height: auto;
+    height: 40px;
     padding: 3px 15px;
     font-size: 25px;
     font-weight: normal;
@@ -304,6 +332,7 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
+    height: 40px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -344,7 +373,7 @@ a:hover {
 }
 
 .navbar-toggle:hover {
-    background: transparent!important;
+    background: transparent;
 }
 
 .navbar-toggle .icon-bar {
@@ -405,7 +434,7 @@ a:hover {
 }
 
 .nav > li > .dropdown a {
-    background: none!important;
+    background: none;
     display: block;
     padding: 14px 15px;
 }
@@ -432,7 +461,7 @@ nav .caret {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
+    margin: 6px -5px 0 0;
     float: right;
 }
 
@@ -462,7 +491,7 @@ nav .caret {
 }
 
 button {
-    outline: none!important;
+    outline: none;
 }
 
 .btn-rd {
@@ -476,12 +505,12 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
-.icon-md {
-    font-size: 30px!important;
+.icon-md{ 
+    font-size: 30px;
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 60px;
 }
 
 .sm-shadow {
@@ -641,7 +670,6 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -654,6 +682,11 @@ a
     /*font-family: "helvetica";
     font-weight: 400; */
     color:black;
+}
+/* Ajout taille du logo  */
+.center-block {
+    width: 100px;
+
 }
 
 .container {
@@ -702,19 +735,27 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 15px auto auto auto;
 }
 
 h2 {
     font-size: 22px;
     line-height: 1.4em;
 }
+.bloc-2-h2{
+    font-family: Archivo-Medium;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
 
 h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -724,11 +765,11 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #333333;
 }
 
 h4 {
-    color: #333333!important;
+    color: #333333;
 }
 
 .icons {
@@ -737,7 +778,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -760,7 +801,7 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
 .bgc-white {
@@ -776,7 +817,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #F3976C;
 }
 
 .btn-atomic-tangerine {
@@ -785,29 +826,29 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #c27956;
+    color: #353535;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #cccccc;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #F3976C;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #c27956;
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #364577;
+    border-color: #364577;
 }
 
 .bg-dots-bg {
@@ -825,6 +866,20 @@ h4 {
 .bg-presentation {
     background-image: url("../img/image-de-presentation.jpg");
 }
+ /* ---- Ajout code ----- */
+.col-sm-12{
+    margin: 20px 0;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90px;
+    margin-top: 15px;
+}
+
+
+/* ------Media Queries------ */
 
 @media (max-width: 1024px) {
     .bloc {
@@ -903,8 +958,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -912,7 +967,7 @@ h4 {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
+        float: none;
     }
     .navbar.row {
         margin-left: 0;
@@ -937,7 +992,7 @@ h4 {
     }
     .dropdown .dropdown a .caret {
         float: none;
-        margin: 5px 0 0 10px!important;
+        margin: 5px 0 0 10px;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;
