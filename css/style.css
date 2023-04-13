@@ -392,47 +392,6 @@ cite{
     z-index: 2;
 }
 
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
-
 .nav > li > .dropdown a {
     background: none;
     display: block;
@@ -768,10 +727,6 @@ h1 {
     color: #333333;
 }
 
-h4 {
-    color: #333333;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -783,6 +738,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {
@@ -867,17 +823,52 @@ h4 {
     background-image: url("../img/image-de-presentation.jpg");
 }
  /* ---- Ajout code ----- */
+ h4 {
+    font-size: 11px;
+}
 .col-sm-12{
     margin: 20px 0;
 }
+
+.footer-row{
+    margin:auto;
+    width:60%;
+}
+
 footer ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-between;
     height: 90px;
-    margin-top: 15px;
+    margin: 15px auto 30px auto;
 }
 
+.footer-row-h4{
+    font-size: 14px;
+    color: white;
+}
+.indication{
+    font-weight: normal;
+}
+.col-sm-6_h2{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.col-sm-6_contact{
+    color: black;
+    margin-top: 10px;
+}
+.row_col-sm-6{
+    display: flex;
+    flex-direction: column;
+}
+.col-sm-12_h3{
+    text-transform: none;
+    font-size:11px;
+    font-weight: normal;
+}
 
 /* ------Media Queries------ */
 
@@ -895,16 +886,17 @@ footer ul {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width: 769px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
+        margin-right: auto;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -916,7 +908,7 @@ footer ul {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .container {
         width: 100%;
     }
@@ -943,9 +935,13 @@ footer ul {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    .row-no-gutters{
+        display: flex ;
+        justify-content: space-between;
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -964,9 +960,7 @@ footer ul {
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
+    .navbar-header{
         float: none;
     }
     .navbar.row {
@@ -979,6 +973,16 @@ footer ul {
         -webkit-transform: none;
         -ms-transform: none;
     }
+
+    .navbar .nav{
+        margin-top: 17px;
+        padding-top: 0;
+        float: none;
+        margin-left: 0;
+    }
+    .nav:nth-child(1){
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -989,6 +993,9 @@ footer ul {
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
+    }
+    .navbar-nav>li>a{
+        padding:10px 0;
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -1011,12 +1018,12 @@ footer ul {
         left: -1px;
         right: -1px;
     }
-    .navbar-collapse {
-        padding: 0;
+  .navbar-collapse{ 
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }
+        padding:0;
+    } 
     .navbar-brand img {
         max-height: 40px;
         width: auto;
@@ -1082,17 +1089,71 @@ footer ul {
         width: 180px;
         height: 320px;
     }
+    .col-sm-6_h2{
+        padding-left: 0;
+    }
+    .col-sm-6_contact{
+        margin-left: 5px;
+    }
 }
+
+/* ---- Retrait media non utile ---- */
+/*@media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
+        width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
+    }
+}*/
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
-}
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+  /*  .row-no-gutters{
+        display: flex ;
+        justify-content: space-between;
+    }
+   */
+    .footer-row{
+        margin-left: 20px;
+    }
+    footer ul{
+        height: unset;
     }
 }
