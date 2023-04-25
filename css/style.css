@@ -135,7 +135,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+/* .d-bloc a .icon-md, */
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -162,7 +162,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: #820101;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -229,6 +229,7 @@ a:hover {
 }
 
 .d-bloc .panel .a-btn,
+.d-bloc a .icon-md,
 .l-bloc .a-btn,
 .l-bloc .navbar a,
 .l-bloc .navbar-brand,
@@ -243,7 +244,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: #333;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -312,7 +313,7 @@ cite{
     padding-left: 0;
 }
 .col-sm-12-h1{
-    background-color: rgba(107, 85, 76, 0.7);
+    background-color: rgba(107, 85, 76, 0.5);
     margin-top: 15px;
     padding: 30px;
 }
@@ -791,12 +792,12 @@ h1 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #353535;
+    color: #341E1E;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956;
-    color: #353535;
+    background: #DDA17A;
+    color: black;
 }
 
 .ltc-white {
@@ -856,10 +857,12 @@ footer ul {
     height: 90px;
     margin: 15px auto 30px auto;
 }
-
+footer a:hover{
+    color: #820101;
+}
 .footer-row-h3{
     font-size: 14px;
-    color: #353535;
+    color: #341E1E;
     text-transform: none;
 }
 .indication{
@@ -882,7 +885,7 @@ footer ul {
     text-transform: none;
     font-size:11px;
     font-weight: normal;
-    color:#353535;
+    color:#341E1E;
 }
 .navbar-collapse.collapse{
     overflow: hidden !important;
