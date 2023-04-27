@@ -110,11 +110,6 @@ a:hover {
 .b-parallax {
     background-attachment: fixed;
 }
-/*
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
-*/
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
@@ -136,7 +131,6 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-/* .d-bloc a .icon-md, */
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -294,7 +288,6 @@ blockquote {
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
-    /* font-style: oblique; */
     margin-bottom: 0;
     color:#737373;
 }
@@ -437,7 +430,7 @@ nav .caret {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    padding: 70px;
+    padding: 40px;
 }
 .mg-md {
     margin-top: 10px;
@@ -654,10 +647,9 @@ label,
 .btn,
 a
 {
-    /*font-family: "helvetica";
-    font-weight: 400; */
     color:black;
 }
+
 /* Ajout taille du logo  */
 .center-block {
     width: 100px;
@@ -779,14 +771,6 @@ h1 {
     text-decoration: underline;
 }
 
-/* .bgc-white { 
-    background-color: #FFFFFF;
-}
-
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-*/
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
@@ -810,7 +794,7 @@ h1 {
 }
 
 .ltc-white:hover {
-    color: #cccccc;
+    color: #FEC3AE !important;
 }
 
 .ltc-atomic-tangerine {
@@ -894,6 +878,10 @@ footer a:hover{
 }
 .navbar-collapse.collapse{
     overflow: hidden !important;
+}
+
+.col-sm-12 .row-mg-md{
+    padding: 70px;
 }
 /* ------Media Queries------ */
 
@@ -1142,40 +1130,6 @@ footer a:hover{
     }
     
 }
-/* ---- Retrait media non utile ---- */
-    /*
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-} -- */
 
 @media (max-width: 400px) {
     .bloc {
